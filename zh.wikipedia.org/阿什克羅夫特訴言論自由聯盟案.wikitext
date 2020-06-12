@@ -9,7 +9,7 @@
 |ArgueYear=2001年
 |DecideDate=4月16日
 |DecideYear=2002年
-|FullName=[[约翰·阿什克罗夫特|約翰·戴維·阿什克羅夫特]]、總檢察長等請願者訴訟自由言論聯盟等（{{lang-en|John David Ashcroft, Attorney General, et al., Petitioners v. The Free Speech Coalition, et al.}}）
+|FullName=[[约翰·阿什克罗夫特|約翰·戴維·阿什克羅夫特]]、總檢察長等請願者訴訟自由言論聯盟等（{{lang|en|John David Ashcroft, Attorney General, et al., Petitioners v. The Free Speech Coalition, et al.}}）
 |USVol=535
 |USPage=234
 |ParallelCitations=122 S. Ct. 1389; 152 L. Ed. 2d 403; 2002 U.S. LEXIS 2789; 70 U.S.L.W. 4237; 30 Media L. Rep. 1673; 2002 Cal. Daily Op. Service 3211; 2002 Daily Journal DAR 4033; 15 Fla. L. Weekly Fed. S 187
