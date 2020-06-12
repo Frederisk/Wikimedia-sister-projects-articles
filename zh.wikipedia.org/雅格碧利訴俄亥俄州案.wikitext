@@ -1,35 +1,47 @@
 {{Infobox SCOTUS case
-|Litigants=Jacobellis v. Ohio
-|ArgueDate=March 26
-|ArgueYear=1963
-|DecideDate=June 22
-|DecideYear=1964
-|FullName=Nico Jacobellis v. Ohio
+|Litigants=雅格碧利訴俄亥俄州案
+|ArgueDate=3月26日
+|ArgueYear=1963年
+|DecideDate=6月22日
+|DecideYear=1964年
+|FullName=尼克·雅隔碧利訴俄亥俄州案（{{lang|en|Nico Jacobellis v. Ohio}}
 |USVol=378
 |USPage=184
 |ParallelCitations=84 S. Ct. 1676; 12 [[L. Ed. 2d]] 793; 1964 [[U.S. LEXIS]] 822; 28 Ohio Op. 2d 101
-|Prior=Defendant convicted, [[Ohio Courts of Common Pleas|Court of Common Pleas]] of [[Cuyahoga County, Ohio]], 6-3-60; affirmed, 175 [[N.E.2d]] [https://scholar.google.com/scholar_case?case=9765579270841154784 123] ([[Ohio Court of Appeals|Ohio Ct. App.]] 1961); affirmed, 179 N.E.2d [https://scholar.google.com/scholar_case?case=14636328038336358072 777] ([[Supreme Court of Ohio|Ohio]] 1962); probable jurisdiction noted, {{ussc|371|808|1962|el=no}}.
-|Subsequent=None
-|Holding=The First Amendment, as applied through the Fourteenth, protected a movie theater manager from being prosecuted for possessing and showing a film that was not obscene.
-|Plurality=Brennan
-|JoinPlurality=Goldberg
-|Concurrence=Black
-|JoinConcurrence=Douglas
-|Concurrence2=Stewart
-|Concurrence3=White
-|Dissent=Warren
-|JoinDissent=Clark
-|Dissent2=Harlan
+|Prior=判定有罪，[[凱霍加縣]][[俄亥俄州普通法院]]，6-3-60；維持原判，175 [[N.E.2d]] [https://scholar.google.com/scholar_case?case=9765579270841154784 123]（{{tsl|en|Ohio Court of Appeals|俄亥俄州地方上訴法院}}1961）；維持原判，179 N.E.2d [https://scholar.google.com/scholar_case?case=14636328038336358072 777] ({{tsl|en|Supreme Court of Ohio|俄亥俄州最高法院}}1962)；指出可能的管轄權，{{ussc|371|808|1962|el=no}}。
+|Subsequent=無
+|Holding=以第十四條修正案適用的第一修正案保護電影院經理不因擁有和放映淫穢電影而遭到起訴。
+|Plurality=布倫南
+|JoinPlurality=戈德堡
+|Concurrence=布萊克
+|JoinConcurrence=道格拉斯
+|Concurrence2=斯圖爾特
+|Concurrence3=懷特
+|Dissent=華倫
+|JoinDissent=克拉克
+|Dissent2=哈倫
 |JoinDissent2=
-|LawsApplied=[[First Amendment to the United States Constitution|U.S. Const. amends. I]], [[Fourteenth Amendment to the United States Constitution|XIV]]; Ohio Rev. Code § 2905.34
+|LawsApplied=[[美國憲法第一修正案|第一修正案]]，[[美利堅合眾國憲法第十四條修正案|第十四修正案]]；俄亥俄州法典 § 2905.34
 }}
 
-'''雅格碧利訴俄亥俄州案'''（{{lang-en|Jacobellis v. Ohio}}，{{ussc|378|184|1964}}）是[[美國最高法院]]於1964年所處理的一起案件，該案的關注焦點在於[[俄亥俄州]]是否可以因該州政府以[[路易斯·馬盧]]的電影《情人{{lang-fr|''Les Amants''}}》涉嫌猥褻內容為由而禁止其放映。
+'''雅格碧利訴俄亥俄州案'''（{{lang-en|Jacobellis v. Ohio}}，{{ussc|378|184|1964}}）是[[美國最高法院]]於1964年所處理的一起案件，該案的關注焦點在於[[俄亥俄州]]是否可以因該州政府以[[路易·馬盧]]的電影《情人{{lang-fr|''Les Amants''}}》涉嫌猥褻內容為由而禁止其放映。
 
 == 背景 ==
-尼克·雅格碧利是俄亥俄州[[利夫蘭高地]][[考文垂村]]附近高地藝術劇院的經理，在雅格碧利訴俄亥俄州案之中他因被指違反了俄亥俄1963年增補法典中對擁有和展示淫穢的兩項禁令，並由[[凱霍加縣普通法院]]法官定罪，並下令要求支付500美元和2000美元（分別針對前後兩項罪名）的罰款（該罰款數額相當於2019年的22000美元）或者不支付罰款並以參與[[刑事勞工]]抵償。俄亥俄上訴法院以及俄亥俄最高法院維持了雅格碧利的有罪判決。
+尼克·雅格碧利是俄亥俄州[[克利夫蘭高地]]{{tsl|en|Coventry Village|考文垂村}}附近高地藝術劇院的經理，在雅格碧利訴俄亥俄州案之中他因被指違反了俄亥俄1963年增補法典中對擁有和展示淫穢的兩項禁令，並由{{tsl|en|Ohio Courts of Common Pleas|俄亥俄州普通法院|凱霍加縣普通法院}}法官定罪，並下令要求支付500美元和2000美元（分別針對前後兩項罪名）的罰款（該罰款數額相當於2019年的22000美元）或者不支付罰款並以參與{{tsl|en|Penal labour|刑事勞工]]抵償。俄亥俄州上訴法院以及俄亥俄州最高法院維持了雅格碧利的有罪判決。
 
 == 最高法院 ==
-雖然俄亥俄各法院均做出了有罪判決，但美國最高法院卻以認定影片並非淫穢影片所以應當受憲法保護為由推翻了原來的審判結果。不過，法院並沒有在判決基本理由上達成一致，在諸多意見中有四種非常有代表性的不同看法。包括兩位持有不同意見的人在內，沒有任何一個觀點的得到兩位以上法官的肯定。[[小威廉·布倫南]]對此案作出了宣判，但只有亞瑟·戈德堡法官同意他的觀點。
+雖然俄亥俄各法院均做出了有罪判決，但美國最高法院卻以認定影片並非淫穢影片所以應當受憲法保護為由推翻了原來的審判結果。不過，法院並沒有在判決基本理由上達成一致，在諸多意見中有四種非常有代表性的不同看法。包括兩位持有不同意見的人在內，沒有任何一個觀點的得到兩位以上法官的肯定。[[小威廉·布倫南]]對此案作出了宣判，但只有{{tsl|en|Arthur Goldberg|亞瑟·戈德堡}}法官同意他的觀點。
 
-[[休戈·布萊克]]法官和[[威廉·道格拉斯]]法官再次強調了[[第一修正案]]中對任何形式審查的禁令。持反對意見的[[厄爾·華倫]]對法院淫穢判例的混亂表示不滿，
+[[休戈·布萊克]]法官聯名[[威廉·道格拉斯]]法官再次強調了[[第一修正案]]中對任何形式審查的禁令。持反對意見的[[厄爾·華倫]]對法院淫穢判例的混亂表示不滿，並認為俄亥俄州所做出的裁定與最高法院在{{tsl|en|Roth v. United States|羅斯訴美聯邦案|羅斯訴美聯邦案}}中的判決保持一致並且維護了國家利益，[[約翰·馬歇爾·哈倫|約翰·馬歇爾·哈倫]]同樣持反對立場，他認為美國各州應當擁有「自由但並非不受聯邦政府限制{{lang|en|wide, but not federally unrestricted}}」的權力來決定是否禁止淫穢電影。
+
+雅格碧利一案中最出名的觀點是[[波特·斯圖爾特]]的支持觀點：憲法保護除了「[[硬調色情|硬調色情製品]]{{lang|en|hard-core pornography}}」以淫穢內容。他寫道：「我當前應當不會去再進一步嘗試去定義那些被包含在速記說明（[[硬調色情|硬調色情]]）中的材料類別——或許我永遠都沒法成功地做到這點——但是{{tsl|en|I know it when I see it|一望而知|當我一看到它我就知道了}}，這個案件中的電影顯然不是（那種色情製品）。」
+
+== 後續發展 ==
+直到1973年{{tsl|en|Miller v. California|米勒訴加州案|米勒訴加州案}}之前，法院對淫穢內容的判決依然相對零碎不一。
+
+== 參見 ==
+*[[大象測試]]
+*{{tsl|en|I know it when I see it|一望而知|當我一看到它我就知道了}}
+
+== 參考資料 ==
+{{reflist}}
