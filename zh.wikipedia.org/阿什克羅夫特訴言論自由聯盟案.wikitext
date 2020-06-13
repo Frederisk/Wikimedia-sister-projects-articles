@@ -1,3 +1,7 @@
+{{Multiple issues|
+{{More footnotes|time=2020-06-14}}
+{{Original research}}|time=2020-06-14}}
+}}
 {{NoteTA
 |1=zh-hans:美国丽人;zh-hk:美麗有罪;zh-tw:美國心玫瑰情;
 |2=zh-hk:羅密歐與茱麗葉之後現代激情篇; zh-tw:羅密歐與茱麗葉; zh-cn:罗密欧与朱丽叶;
@@ -12,7 +16,7 @@
 |FullName=[[约翰·阿什克罗夫特|約翰·戴維·阿什克羅夫特]]、總檢察長等請願者訴訟自由言論聯盟等（{{lang|en|John David Ashcroft, Attorney General, et al., Petitioners v. The Free Speech Coalition, et al.}}）
 |USVol=535
 |USPage=234
-|ParallelCitations=122 S. Ct. 1389; 152 L. Ed. 2d 403; 2002 U.S. LEXIS 2789; 70 U.S.L.W. 4237; 30 Media L. Rep. 1673; 2002 Cal. Daily Op. Service 3211; 2002 Daily Journal DAR 4033; 15 Fla. L. Weekly Fed. S 187
+|ParallelCitations=122 S. Ct. 1389; 152 [[L. Ed. 2d]] 403; 2002 [[U.S. LEXIS]] 2789; 70 U.S.L.W. 4237; 30 Media L. Rep. 1673; 2002 Cal. Daily Op. Service 3211; 2002 Daily Journal DAR 4033; 15 Fla. L. Weekly Fed. S 187
 |Prior=言論自由聯盟訴雷諾案， 198 [[F.3d]] [https://law.justia.com/cases/federal/appellate-courts/F3/198/1083/597166/ 1083] (9th Cir. 1999)； 重新審理被拒絕， 220 F.3d [https://law.justia.com/cases/federal/appellate-courts/F3/220/1113/625466/ 1113] (9th Cir. 2000)；{{tsl|en|Certiorari|移審}}獲批， {{ussc|531|1124|2001|el=no}}。
 |Subsequent=
 |Holding=法院認為兩項規定違憲，相關條款妨害了「表述大量合法言論的自由（{{lang-en|the freedom to engage in a substantial amount of lawful speech}}）」，[[美國加利福尼亞北區聯邦地區法院]]予以確認。
@@ -28,10 +32,10 @@
 |LawsApplied={{hlist |[[美國憲法第一修正案|第一修正案]]|《{{tsl|en|Child Pornography Prevention Act of 1996|1996年防止兒童色情製品法|1996年防止兒童色情製品法}}》}}, 
 }}
 {{Simplify|1996年防止兒童色情製品法|防止兒童色情製品法}}
-'''阿什克羅夫特訴言論自由聯盟案'''（{{lang-en|Ashcroft v. Free Speech Coalition}}，{{ussc|535|234|2002}}）是由[[美國最高法院]]審理的一起案件，該起案件以相關條款妨害了「表述大量合法言論的自由（{{lang|en|the freedom to engage in a substantial amount of lawful speech}}）」為由推翻了《{{tsl|en|Child Pornography Prevention Act of 1996|1996年防止兒童色情製品法|1996年防止兒童色情製品法}}》中的兩項過於寬泛的規定。該起案件由言論自由聯盟「加州成人娛樂業貿易協會（{{lang|en|California trade association for the adult-entertainment industry}}）」、提倡裸體主義者生活方式的書籍的出版商Bold Type公司、裸體繪畫師吉姆·金格里奇（{{lang|en|Jim Gingerich}}以及專門從事色情圖片的攝影師羅恩·拉斐里（{{lang|en|Ron Raffaelli}}）向政府提起。法院認定兩項規定違憲，並否決了增加第一修正案保護範圍之外言論的提案。
+'''阿什克羅夫特訴言論自由聯盟案'''（{{lang-en|Ashcroft v. Free Speech Coalition}}，{{ussc|535|234|2002}}）是由[[美國最高法院]]審理的一起案件，該起案件以相關條款妨害了「表述大量合法言論的自由（{{lang|en|the freedom to engage in a substantial amount of lawful speech}}）」為由推翻了《{{tsl|en|Child Pornography Prevention Act of 1996|1996年防止兒童色情製品法|1996年防止兒童色情製品法}}》中的兩項過於寬泛的規定。<ref>{{Cite web|title=Ashcroft v. Free Speech Coalition, 535 U.S. 234 (2002)|url=https://supreme.justia.com/cases/federal/us/535/234/|accessdate=2020-06-13|work=Justia Law|language=en}}</ref>該起案件由言論自由聯盟「加州成人娛樂業貿易協會（{{lang|en|California trade association for the adult-entertainment industry}}）」、提倡裸體主義者生活方式的書籍的出版商Bold Type公司、裸體繪畫師吉姆·金格里奇（{{lang|en|Jim Gingerich}}以及專門從事色情圖片的攝影師羅恩·拉斐里（{{lang|en|Ron Raffaelli}}）向政府提起。法院認定兩項規定違憲，並否決了增加第一修正案保護範圍之外言論的提案。
 
 == 案件背景 ==
-過往的[[判例法]]確定了兩類不受[[第一修正案]]保護的兩類相關言論，在{{tsl|en|Miller v. California|米勒訴加州案|米勒訴加州案}}（{{ussc|413|15|1973}}）中[[法院]]認為第一修正案可以允許政府對淫穢內容進行限制；以及{{tsl|en|New York v. Ferber|紐約訴費伯案|紐約訴費伯案}}（{{ussc|458|747|1982}}），中法院認為，政府可以禁止對[[兒童色情]]製品的散佈行為以保護兒童免受兒童色情內容製作時會受到的侵害，法院隨後在{{tsl|en|Osborne v. Ohio|奧斯本訴俄亥俄州案|奧斯本訴俄亥俄州案}}（{{ussc|495|103|1990}}）將其進一步擴張解釋為禁止持有兒童色情製品並將之定為一種[[刑事犯罪]]。
+過往的[[判例法]]確定了兩類不受[[第一修正案]]保護的兩類相關言論，在{{tsl|en|Miller v. California|米勒訴加州案|米勒訴加州案}}（{{ussc|413|15|1973}}）中[[法院]]認為第一修正案可以允許政府對淫穢內容進行限制；<ref>{{Cite web|title=Miller v. California, 413 U.S. 15 (1973)|url=https://supreme.justia.com/cases/federal/us/413/15/|accessdate=2020-06-13|work=Justia Law|language=en}}</ref>以及{{tsl|en|New York v. Ferber|紐約訴費伯案|紐約訴費伯案}}（{{ussc|458|747|1982}}），中法院認為，政府可以禁止對[[兒童色情]]製品的散佈行為以保護兒童免受兒童色情內容製作時會受到的侵害。<ref>{{Cite web|title=New York v. Ferber, 458 U.S. 747 (1982)|url=https://supreme.justia.com/cases/federal/us/458/747/|accessdate=2020-06-13|work=Justia Law|language=en}}</ref>法院隨後在{{tsl|en|Osborne v. Ohio|奧斯本訴俄亥俄州案|奧斯本訴俄亥俄州案}}（{{ussc|495|103|1990}}）將其進一步擴張解釋為禁止持有兒童色情製品並將之定為一種[[刑事犯罪]]。<ref>{{Cite web|title=Osborne v. Ohio, 495 U.S. 103 (1990)|url=https://supreme.justia.com/cases/federal/us/495/103/|accessdate=2020-06-13|work=Justia Law|language=en}}</ref>
 
 == 執行法規 ==
 在1996年之前，[[美國國會]]是以費伯案為標準對兒童色情製品進行界定的。而在《1996年防止兒童色情製品法》實施時，本案中存在爭議的兩類言論也被加入到了兒童色情內容的定義當中。第一條禁止了「對是在或是接近在進行色情露骨行為的[[未成年人]]」的「任何視覺描述，包括任何的照片、電影、視訊、圖片、電腦或電腦生成的圖像或圖片」，法院指出，這一規定「囊括了一系列有時被稱為[[虛擬兒童色情]]的內容，包括對電腦生成圖像以及通過更傳統的方式所產生的圖像的描述」；第二條則禁止「以傳達未成年人從事露骨性行為印象的方式廣告、宣傳、展示、描述或散佈任何露骨色情圖片」。
@@ -39,7 +43,7 @@
 == 訴訟 ==
 {{tsl|en|Free Speech Coalition|言論自由聯盟|言論自由聯盟}}擔心國會擴大兒童色情製品定義的行為會危害到某些合法活動，於是在[[美國加利福尼亞北區聯邦地區法院]]提起訴訟要求對《防止兒童色情製品法》的執行發出禁令。他們認為第一條規定中對「接近在」進行性活動兒童圖像的禁止、以及第二項禁止言論「傳達」描繪了未成年人進行性行為圖像的「印象」的要求過於寬泛、模糊，並且對合法的工作造成了[[寒蟬效應 (法律)|寒蟬效應]]。但地區法院並沒有同意這一觀點，並補充說這種涉及範圍過廣的說法是錯誤的，因為將任何「像《[[羅密歐與朱麗葉]]》這樣的色情作品改編……被視為刑事違禁品」是「極不可能的」。
 
-然而[[美國聯邦第九巡迴上訴法院|第九巡迴法院]]則推翻了這一判決，理由是政府不能夠僅僅由於因為其傾向於讓人們從事非法活動而限制言論。法院裁定《防止兒童色情製品法》事實上過於寬泛，因為其禁止了那些既不淫穢也不是如同費伯案那樣通過[[剝削]]兒童而產生的材料。法院拒絕了重新[[全院庭審]]此案。政府要求最高法院對此案進行審查，最高法院同意了請求並指出第九巡回法院与四个其他巡回上诉法院的裁决相抵触。但最終最高法院認可了第九巡迴法庭的判決。
+然而[[美國聯邦第九巡迴上訴法院|第九巡迴法院]]則推翻了這一判決，理由是政府不能夠僅僅由於因為其傾向於讓人們從事非法活動而限制言論。<ref name="Appeal">{{cite court |litigants=Free Speech Coalition v. Reno |vol=198 |reporter=F.3d |opinion=1083 |pinpoint= |court=9th Cir. |date=1999 |url=https://law.justia.com/cases/federal/appellate-courts/F3/198/1083/597166/ |accessdate=2019-11-19 |quote=}}</ref>法院裁定《防止兒童色情製品法》事實上過於寬泛，因為其禁止了那些既不淫穢也不是如同費伯案那樣通過[[剝削]]兒童而產生的材料。<ref name="Appeal"/>法院拒絕了重新[[全院庭審]]此案。政府要求最高法院對此案進行審查，最高法院同意了請求並指出第九巡回法院与四个其他巡回上诉法院的裁决相抵触。但最終最高法院認可了第九巡迴法庭的判決。<ref name="EnBanc">{{cite court |litigants=Free Speech Coalition v. Reno |vol=220 |reporter=F.3d |opinion=1113 |pinpoint= |court=9th Cir. |date=2000 |url=https://law.justia.com/cases/federal/appellate-courts/F3/220/1113/625466/ |accessdate=2019-11-19 |quote=}}</ref>
 
 == 意見 ==
 「國會不得制定任何法律……剝奪言論自由」和對受保護的言論施加刑事制裁是「對言論打壓的鮮明例子」。同時，對兒童的[[性虐待]]「是最嚴重的犯罪，是與正面人類的道德本能相牴觸的行為」，「國會可以通過有效的法律來保護兒童免遭虐待，而且確實如此」。在此案中，存在爭議的《防止兒童色情製品法》中的兩項規定的最大問題是其囊括了淫穢內容和兒童色情外的其他言論內容，所以過於寬泛。
@@ -67,4 +71,7 @@
 *英文{{Wikisource-inline|en:Ashcroft v. Free Speech Coalition}}；
 *[http://www.freespeechcoalition.com/ 言論自由聯盟]。
 
-[[Category:美国最高法院案例]][[Category:美國互聯網判例法]]
+[[Category:美国最高法院案例]]
+[[Category:美國互聯網判例法]]
+
+<!--{{US1stAmendment|speech|state=expanded}}-->

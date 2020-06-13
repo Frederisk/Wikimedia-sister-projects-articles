@@ -24,7 +24,7 @@
 |LawsApplied=[[美國憲法第一修正案|第一修正案]]，[[美利堅合眾國憲法第十四條修正案|第十四修正案]]；俄亥俄州法典 § 2905.34
 }}
 
-'''雅格碧利訴俄亥俄州案'''（{{lang-en|Jacobellis v. Ohio}}，{{ussc|378|184|1964}}）是[[美國最高法院]]於1964年所處理的一起案件，該案的關注焦點在於[[俄亥俄州]]是否可以因該州政府以[[路易·馬盧]]的電影《情人{{lang-fr|''Les Amants''}}》涉嫌猥褻內容為由而禁止其放映。<ref>{{ussc|name=Jacobellis v. Ohio|378|184|1964}}.</ref>
+'''雅格碧利訴俄亥俄州案'''（{{lang-en|Jacobellis v. Ohio}}，{{ussc|378|184|1964}}）是[[美國最高法院]]於1964年所處理的一起案件，該案的關注焦點在於[[俄亥俄州]]是否可以因該州政府以[[路易·馬盧]]的電影《情人{{lang-fr|''Les Amants''}}》涉嫌猥褻內容為由而禁止其放映。<ref>{{Cite web|title=Jacobellis v. Ohio, 378 U.S. 184 (1964)|url=https://supreme.justia.com/cases/federal/us/378/184/|accessdate=2020-06-13|work=Justia Law|language=en}}</ref>
 
 == 背景 ==
 尼克·雅格碧利是俄亥俄州[[克利夫蘭高地]]{{tsl|en|Coventry Village|考文垂村}}附近高地藝術劇院的經理，在雅格碧利訴俄亥俄州案之中他因被指違反了俄亥俄1963年增補法典中對擁有和展示淫穢的兩項禁令，並由{{tsl|en|Ohio Courts of Common Pleas|俄亥俄州普通法院|凱霍加縣普通法院}}法官定罪，並下令要求支付500美元和2000美元（分別針對前後兩項罪名）的罰款（該罰款數額{{Inflation|US|2500|1960|fmt=eq|r=-3}}）{{Inflation/fn|US}}或者不支付罰款並以參與{{tsl|en|Penal labour|刑事勞工]]抵償。<ref>https://caselaw.findlaw.com/us-supreme-court/378/184.html</ref>俄亥俄州上訴法院以及俄亥俄州最高法院維持了雅格碧利的有罪判決。<ref>{{cite court|litigants=State v. Jacobellis|vol=175|reporter=N.E.2d|opinion=123|pinpoint=|court=Ohio Ct. App.|date=1961|url=https://scholar.google.com/scholar_case?case=9765579270841154784|accessdate=2017-01-05|quote=}}</ref><ref>{{cite court|litigants=State v. Jacobellis|vol=179|reporter=N.E.2d|opinion=777|pinpoint=|court=Ohio|date=1962|url=https://scholar.google.com/scholar_case?case=14636328038336358072|accessdate=2017-01-05|quote=}}</ref>
@@ -58,4 +58,6 @@
 | oyez =https://www.oyez.org/cases/1963/11
  }}
 
-{{US1stAmendment|speech|state=expanded}}
+[[Category:美国最高法院案例]]
+
+<!--{{US1stAmendment|speech|state=expanded}}-->
