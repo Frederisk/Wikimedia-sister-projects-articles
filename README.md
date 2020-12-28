@@ -1,4 +1,4 @@
-# Wikimedia-Sister-Projects-Articles
+# WikimediaSisterProjects-Articles
 
 This respository is used to store and synchronize my Wikimedia sister projects articles. those articles maintain the CC BY-SA 4.0 license before posting to Wikipedia or other sites or obtaining my other authorization.
 
