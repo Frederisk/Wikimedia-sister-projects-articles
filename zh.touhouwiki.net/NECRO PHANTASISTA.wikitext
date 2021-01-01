@@ -1,0 +1,87 @@
+<%-- [PAGE_INFO]
+PageTitle=#NECRO PHANTASISTA#
+[END_PAGE_INFO] --%>
+
+{{MusicArticle
+| titleen = NECRO PHANTASISTA
+| group = [[A-One]]
+| groupCat = A-One
+| released = 2015-05-10
+| convention = Reitaisai 12
+| tracks = 6
+| length = 27:95
+| catalogno = AONE-0030
+| genre = {{Genre|Vocal}}
+| website = [http://a-one-records.com/discography/000408.html Link]
+| image = AONE-0030.png
+| caption = Pictured: [[Yukari Yakumo]] (left), [[Reimu Hakurei]] (right)
+| arranger = ELEMENTAS
+:Yassie
+:{{lang|jp|越田Rute隆人}}
+:LAN.na
+| lyricist = Rute
+:{{lang|jp|あき}} ([[はにーぽけっと|はにーぽけっと]])
+:Yassie
+| vocalist = {{lang|jp|越田Rute隆人}}
+:{{lang|jp|あき}} ([[はにーぽけっと]])
+| producer = A-One
+| illustrator = {{lang|ja|燗汰朗}} ([[ClearLeMel]])
+| designer =
+| masterer =
+| other_staff =;Guitar: NORI ([http://m-i-w.syncl.jp/ M.I.W.])
+;Bass: {{lang|ja|たく}} ([[はにーぽけっと]])
+| description = 該專輯所用音樂旋律樂器風格等來源於《[[東方紅魔鄉]]》、《[[東方妖妖夢]]》、《[[東方花映塚]]》、《[[東方風神錄]]》、《[[妖精大戰爭]]》以及《[[東方神靈廟]]》。其中包含兩首曾在[[TOHO EUROBEAT VOL.11 LEAD SINGLE センヲコエテ]]中發行過的編曲。
+| tracklist   =
+
+*{{Track|01|十六夜、咲く華|4:38|lyrics=Lyrics: 十六夜、咲く華}}
+** arrangement: Yassie
+** lyrics: Rute
+** vocals: {{lang|ja|越田Rute隆人}}
+** bass: たく
+** guitar: NORI
+** original title: {{lang|ja|フラワリングナイト}}
+** source: {{th09}}
+** original title: {{lang|ja|月時計　～ ルナ・ダイアル}}
+** source: {{th06}}
+
+*{{Track|02|NECRO PHANTASISTA|5:09|lyrics=Lyrics: NECRO PHANTASISTA}}
+** arrangement: ELEMENTAS
+** lyrics: Rute
+** vocals: {{lang|jp|越田Rute隆人}}
+** original title: {{lang|ja|ネクロファンタジア}}
+** source: {{th07}}
+
+*{{Track|03|スバラシイトイウコト|4:35|lyrics=Lyrics: スバラシイトイウコト}}
+** arrangement: Yassie
+** lyrics: Yassie
+** vocals: {{lang|jp|越田Rute隆人}}
+** guitar: NORI
+** original title: {{lang|ja|運命のダークサイド}}
+** original title: {{lang|ja|厄神様の通り道　～}} Dark Road
+** source: {{th10}}
+
+*{{Track|04|Fairy Dance|5:59|lyrics=Lyrics: 永醒夢 〜Ei Sei Mu〜}}
+** arrangement: ELEMENTAS
+** lyrics: {{lang|jp|あき}}
+** vocals: {{lang|jp|あき}}
+** original title: {{lang|ja|真夜中のフェアリーダンス}}
+** original title: {{lang|ja|妖精大戦争　～}} Fairy Wars
+** source: {{th128}}
+
+*{{Track|05|約束なんかいらない|3:33|lyrics=Lyrics: 約束なんかいらない}}
+** arrangement: {{lang|jp|越田Rute隆人}} & Yassie
+** lyrics: Rute
+** vocals: {{lang|jp|越田Rute隆人}}
+** guitar: NORI
+** original title: {{lang|ja|古きユアンシェン}}
+** source: {{th13}}
+
+*{{Track|06|How to Love|5:21|lyrics=Lyrics: How to Love}}
+** arrangement: LAN.na
+** lyrics: Yassie
+** vocals: {{lang|jp|越田Rute隆人 × あき}}
+** original title: {{lang|ja|紅楼　～}} Eastern Dream...
+** source: {{th06}}
+** original title: {{lang|ja|デザイアドライブ}}
+** source: {{th13}}
+}}

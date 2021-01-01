@@ -1,0 +1,94 @@
+<%-- [PAGE_INFO]
+Comment=#Please do not remove this struct. It's record contains some important informations of edit. This struct will be removed automatically after you push edits.#
+PageTitle=#NECRO PHANTASISTA#
+PageID=#63602#
+RevisionID=#380224#
+ContentModel=#wikitext#
+ContentFormat=#text/x-wiki#
+[END_PAGE_INFO] --%>
+
+{{MusicArticle
+| titleen     =NECRO PHANTASISTA
+| group       =[[A-One]]
+| groupCat    =A-One
+| released    =2015-05-10
+| convention  =Reitaisai 12
+| tracks      =6
+| length      =27:95
+| catalogno   =AONE-0030
+| genre       ={{Genre|Vocal}}
+| website     =[http://a-one-records.com/discography/000408.html Link]
+| image       =AONE-0030.png
+| caption     =Pictured: [[Yukari Yakumo]] (left), [[Reimu Hakurei]] (right)
+| arranger    =ELEMENTAS
+:Yassie
+:{{越田Rute隆人}}
+:LAN.na
+| lyricist    =Rute
+:{{あき}} ([[はにーぽけっと|はにーぽけっと]])
+:Yassie
+| vocalist    ={{越田Rute隆人}}
+:{{あき}} ([[はにーぽけっと]])
+| producer    =A-One
+| illustrator ={{lang|ja|燗汰朗}} ([[ClearLeMel]])
+| designer    =
+| masterer    =
+| other_staff =;Guitar: NORI ([http://m-i-w.syncl.jp/ M.I.W.])
+;Bass: {{lang|ja|たく}} ([[はにーぽけっと]])
+| description =It features vocal arrangements of themes from ''[[Embodiment of Scarlet Devil]]'', ''[[Perfect Cherry Blossom]]'', ''[[Phantasmagoria of Flower View]]'', ''[[Mountain of Faith]]'', ''[[Fairy Wars]]'', ''[[Ten Desires]]''.
+Contain two arrangements which was previously released in [[TOHO EUROBEAT VOL.11 LEAD SINGLE センヲコエテ]].
+
+| tracklist   =
+
+*{{Track|01|十六夜、咲く華|4:38|lyrics=Lyrics: 十六夜、咲く華}}
+** arrangement: Yassie
+** lyrics: Rute
+** vocals: {{越田Rute隆人}}
+** bass: たく
+** guitar: NORI
+** original title: {{lang|ja|フラワリングナイト}}
+** source: {{PoFV}}
+** original title: {{lang|ja|月時計　～ ルナ・ダイアル}}
+** source: {{EoSD}}
+
+*{{Track|02|NECRO PHANTASISTA|5:09|lyrics=Lyrics: NECRO PHANTASISTA}}
+** arrangement: ELEMENTAS
+** lyrics: Rute
+** vocals: {{越田Rute隆人}}
+** original title: {{lang|ja|ネクロファンタジア}}
+** source: {{PCB}}
+
+*{{Track|03|スバラシイトイウコト|4:35|lyrics=Lyrics: スバラシイトイウコト}}
+** arrangement: Yassie
+** lyrics: Yassie
+** vocals: {{越田Rute隆人}}
+** guitar: NORI
+** original title: {{lang|ja|運命のダークサイド}}
+** original title: {{lang|ja|厄神様の通り道　～}} Dark Road
+** source: {{MoF}}
+
+*{{Track|04|Fairy Dance|5:59|lyrics=Lyrics: 永醒夢 〜Ei Sei Mu〜}}
+** arrangement: ELEMENTAS
+** lyrics: {{あき}}
+** vocals: {{あき}}
+** original title: {{lang|ja|真夜中のフェアリーダンス}}
+** original title: {{lang|ja|妖精大戦争　～}} Fairy Wars
+** source: {{FW}}
+
+*{{Track|05|約束なんかいらない|3:33|lyrics=Lyrics: 約束なんかいらない}}
+** arrangement: {{越田Rute隆人}} & Yassie
+** lyrics: Rute
+** vocals: {{越田Rute隆人}}
+** guitar: NORI
+** original title: {{lang|ja|古きユアンシェン}}
+** source: {{TD}}
+
+*{{Track|06|How to Love|5:21|lyrics=Lyrics: How to Love}}
+** arrangement: LAN.na
+** lyrics: Yassie
+** vocals: {{越田Rute隆人}} × {{あき}}
+** original title: {{lang|ja|紅楼　～}} Eastern Dream...
+** source: {{EoSD}}
+** original title: {{lang|ja|デザイアドライブ}}
+** source: {{TD}}
+}}
