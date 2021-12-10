@@ -2,38 +2,66 @@
     comment = #Please do not remove this struct. It's record contains some important information of edit. This struct will be removed automatically after you push edits.#
     pageTitle = #位元深度 (音訊)#
     pageID = #7740282#
-    revisionID = #68821247#
+    revisionID = #68870069#
     contentModel = #wikitext#
     contentFormat = #text/x-wiki#
 [END_PAGE_INFO] --%>
 
+<!--#region header-->
 {{about|音訊方面的位元深度|[[数字图像]]、[[图像压缩]]方面|色彩深度}}
-
-{{Unreferenced|time=2021-11-23T02:07:53+00:00}}
 {{NoteTA
 | T = zh-hans:位深度 (音频); zh-hant:位元深度 (音訊)
 | G1 = IT
 | G2 = Signals_and_Systems
 | G3 = Music
 | 1 = zh-cn:有损数据压缩; zh-tw:破壞性資料壓縮; zh-hk:有損資料壓縮
-| 2= zh-hans:位深度; zh-hant:位元深度
+| 2 = zh-hans:位深度; zh-hant:位元深度
+| 3 = zh-hans:量化噪声; zh-hant:量化雜訊
+| 4 = zh-hans:信噪比; zh-hant:訊噪比
 }}
+
+<!--#endregion header-->
+
 [[File:4-bit-linear-PCM.svg|thumb|红色表示一段-{zh-hans:[[模拟信号]]; zh-hk:[[模擬訊號]]; zh-tw:[[類比訊號]]}-，蓝色表示脈衝編碼調變（{{lang|en|PCM}}）在4位元下所得取样点；由于位元深度为4，每次取样的振幅便是16（2<sup>4</sup>）种可能值之一。]]
 
 在[[數位音訊]]與[[脈衝編碼調變]]（{{lang-en|PCM}}）中，'''音訊位元深度'''（{{Lang-en|audio bit depth}}）是指每次[[取樣]]儲存着多少[[位元]]（{{lang-en|bit}}）的資訊，数值直接对应着每次取樣的'''解析度'''。比如，[[數位音樂光碟]]采用[[16位元]]儲存取樣，则每个取樣點可以儲存65,536（2<sup>16</sup>）种可能振幅值之一；[[DVD-Audio|DVD-A]]與[[藍光光碟]]則最高可支援24位元，即每个取樣點最多可以儲存16,777,216（2<sup>24</sup>）种可能振幅值之一。
 
-在一些基本执行实例中，位元深度的變化主要影響由[[量化误差]]引起的-{zh-hans:[[量化噪声]]; zh-hk:[[量化雜訊]]; zh-tw:[[量化雜訊]]}-水平，比如說-{zh-hans:[[信噪比]];zh-hant:[[訊噪比]]}-（{{lang-en|SNR}}）和[[動態範圍]]。不过，[[抖動_(數位訊號處理)|抖动]]、[[过采样]]、{{Tsl|en|noise shaping|雜訊整型|雜訊整型}}等技术也能够减轻上述影响，同时维持位元深度不变。另外，位元深度還會影響[[位元速率]]和檔案大小。
+在一些基本执行实例中，位元深度的變化主要影響由[[量化误差]]引起的[[量化雜訊]]水平，比如說[[訊噪比]]（{{lang-en|SNR}}）和[[動態範圍]]。不过，[[抖動_(數位訊號處理)|抖动]]、[[过采样]]、{{Tsl|en|noise shaping|雜訊整型|雜訊整型}}等技术也能够减轻上述影响，同时维持位元深度不变。另外，位元深度還會影響[[位元速率]]和檔案大小。
 
 位元深度仅对{{lang|en|PCM}}數位化訊號有意义，而[[有损数据压缩]]格式等非{{lang|en|PCM}}格式并无「位元深度」一说。
 
 == 二進位表示 ==
 
-{{lang|en|PCM}}訊號是包含可提供{{tsl|en|Signal reconstruction|訊號重建|重建}}原始[[類比訊號]]所需資料的數位音訊取樣序列，在序列中的每個取樣都是以固定時間均勻隔開的，並且各自都代表了對應時間點上訊號強度。在每個取樣中唯一存儲的資訊是[[振幅]]，其通常以固定位元數的[[二進位]][[整数_(计算机科学)|整數]]或[[浮點數]]表示，這個位元數也就是取樣的位元深度（{{lang-en|bit depth}}）、[[字_(计算机)|字組]]長（{{lang-en|word length}}）或者字組大小（{{lang-en|word size}}）。
+{{lang|en|PCM}}訊號是一段數位音訊取樣點序列，它所包含的資料可為{{tsl|en|Signal reconstruction|訊號重建|重建}}原始[[類比訊號]]提供必要資訊。在序列中，所有取樣點在時間上間隔均勻，各自代表訊號在對應時間點上的[[振幅]]。振幅是每個取樣點所精确存儲的唯一資訊，其儲存形式通常是[[整数_(计算机科学)|整數]]或[[浮點數]]形式，但会编码成具有固定位數的[[二進位]]數。该二進位數之位数就是取樣的位元深度（{{lang-en|bit depth}}），也称作[[字長]]（{{lang-en|word length}}）或者字大小（{{lang-en|word size}}）。
 
-取樣的解析度表示在模擬值範圍內可表示的離散值數量。取樣在整數PCM音訊資料中通常以[[二補數]]碼的形式存儲為帶[[符号性|符號數]]，隨著字組長的增加，二進位整數的取樣解析度也會隨之以指數級增加。字組長每增長一位解析度翻一倍，所以也能透過整數的位元深度來的知可表示值的數量為[[2的幂|2<sup>n</sup>]]，其中{{lang|en|n}}為位元深度。
+取樣點的解析度是指：由原始類比訊號所含所有振幅值所构成的连续分布範圍內，有多少離散值能夠為取樣點所表示。取樣在整數PCM音訊資料中通常以[[二補數]]碼的形式存儲為帶[[符号性|符號數]]，以二進位整數表示的解析度會隨著字長增加而呈[[指數增長]]，字長每增加一位元，解析度即翻一倍。若位元深度以十進位整數形式表示为{{lang|en|n}}，則取樣點能夠表示的可能振幅值數量为[[2的幂|2<sup>n</sup>]]。<ref name="Understanding Audio" /> 例如，若位元深度为16，则解析度为65,536（2<sup>16</sup>）。
 
-許多音訊[[檔案格式]]以及{{tsl|en|Digital audio workstation|數位聲訊工作站}}（{{lang-en|DAW}}）現在也支援以浮點數表示取樣的{{lang-en|PCM}}格式，比如{{lang|en|[[WAV|WAV]]}}與{{lang|en|[[AIFF|AIFF]]}}。整數的位元模式是單一的比特系列，而浮點則與之不同，其數值表示是由單獨而互相構成數學關係的欄位構成的。最常見的浮點數標準是{{lang|en|[[IEEE 754|IEEE 754]]}}，在該標準中，數字由表示符號正負的{{tsl|en|Significand|符號位}}、指數以及由指數代表位移的{{tsl|en|Significand|有效數|尾數}}組成，其中尾數在{{lang|en|IEEE}}二進位格式中是以二進位分數表示的。
+許多音訊[[檔案格式]]以及{{tsl|en|Digital audio workstation|數位聲訊工作站}}（{{lang-en|DAW}}）現在也支援以浮點數表示取樣的{{lang|en|PCM}}格式，<ref name="ptnativefloat" /><ref name="protools10float" /><ref name="reasonfloat" /><ref name="live10manual" />比如{{lang|en|[[WAV|WAV]]}}與{{lang|en|[[AIFF|AIFF]]}}。整數的位元模式是單一的比特系列，而浮點則與之不同，其數值表示是由單獨而互相構成數學關係的欄位構成的。最常見的浮點數標準是{{lang|en|[[IEEE 754|IEEE 754]]}}，在該標準中，數字由表示符號正負的{{tsl|en|Significand|符號位}}、指數以及由指數代表位移的{{tsl|en|Significand|有效數|尾數}}組成，其中尾數在{{lang|en|IEEE}}二進位格式中是以二進位分數表示的。
 
-<!-- == 量化 == -->
+== 量化 ==
+
+位元深度限制了重建訊號的[[訊噪比]]為[[量化_(信号处理)#量化误差|量化誤差]]所確定的最大[[信號位準|位準]]。而[[頻率響應]]則取決於[[取樣率]]而與位元深度無關。
+
+類比至數位轉換（{{lang-en|ADC}}）中的量化誤差可建模為量化雜訊，其來源於ADC類比輸入電壓輸出為數位值時產生的捨入誤差，這種雜訊是非線性的並與訊號本身相關。
+
+[[File:Least significant bit.svg|thumb|280px|right|以[[8位元]]二進位表示的十進位數字149，其中{{lang|en|LSB}}以強調色標記]]
+
+在理想狀態下，{{lang-en|ADC}}的量化誤差會均勻分布在±½倍的[[最低有效位]]（{{lang-en|LSB}}）內，並且訊號會有覆蓋所有量化階的均勻分布。信號量化雜訊比（{{lang-en|SQNR}}）可通過下式計算：
+
+<math>\mathrm{SQNR}=20\log_{10}(2^{Q})\approx6.02\cdot{}Q\ \mathrm{dB}</math>
+
+此處的{{lang|en|Q}}為訊號的量化位元數，解果以分貝（{{lang-en|dB}}）為單位。
+
+<!--#region reflist-->
+== 參考資料 ==
+
+{{Reflist|refs=
+<ref name="Understanding Audio">Thompson, Dan (2005). ''Understanding Audio''. Berklee Press. {{ISBN|978-0-634-00959-4}}.</ref>
+<ref name="ptnativefloat">{{cite book |url=https://books.google.com/books?id=0WEKAAAAQBAJ&pg=PA247 |title=Pro Tools 10 Advanced Music Production Techniques, pg. 247 |author=Campbell, Robert |year=2013 |publisher=Cengage Learning |isbn=978-1133728016 |access-date=12 August 2013}}</ref>
+<ref name="protools10float">{{cite web |url=http://www.soundonsound.com/sos/mar12/articles/pt-10.htm |title=Avid Pro Tools 10 |author=Wherry, Mark |date=March 2012 |publisher=Sound On Sound |access-date=10 August 2013}}</ref>
+<ref name="reasonfloat">{{cite web |url=http://www.soundonsound.com/sos/oct05/articles/reasontechnique.htm |title=Reason Mixing Masterclass |author=Price, Simon |date=October 2005 |publisher=Sound On Sound |access-date=10 August 2013}}</ref>
+<ref name="live10manual">{{cite web |url=https://www.ableton.com/en/manual/audio-fact-sheet/ |title=Ableton Reference Manual Version 10, 32. Audio Fact Sheet |publisher=Ableton |year=2019 |access-date=September 3, 2019}}</ref>
+}}
+<!--#endregion reflist-->
 
 [[Category:數位音訊]]
