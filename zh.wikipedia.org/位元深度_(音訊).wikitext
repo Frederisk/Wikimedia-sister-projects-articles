@@ -2,7 +2,7 @@
     comment = #Please do not remove this struct. It's record contains some important information of edit. This struct will be removed automatically after you push edits.#
     pageTitle = #位元深度 (音訊)#
     pageID = #7740282#
-    revisionID = #68870069#
+    revisionID = #68961517#
     contentModel = #wikitext#
     contentFormat = #text/x-wiki#
 [END_PAGE_INFO] --%>
@@ -18,49 +18,187 @@
 | 2 = zh-hans:位深度; zh-hant:位元深度
 | 3 = zh-hans:量化噪声; zh-hant:量化雜訊
 | 4 = zh-hans:信噪比; zh-hant:訊噪比
+| 5 = zh-hant:雜訊基底; zh-hans:底噪
 }}
 
 <!--#endregion header-->
+[[File:4-bit-linear-PCM.svg|thumb|红色表示一段-{zh-hans:[[模拟信号]]; zh-hk:[[模擬訊號]]; zh-tw:[[類比訊號]]}-，蓝色表示脈衝編碼調變（{{lang|en|PCM}}）在4位元下所得取样点；由于位元深度为4即解析度为16（2<sup>4</sup>），每次取样的振幅便是16种可能值之一。]]
 
-[[File:4-bit-linear-PCM.svg|thumb|红色表示一段-{zh-hans:[[模拟信号]]; zh-hk:[[模擬訊號]]; zh-tw:[[類比訊號]]}-，蓝色表示脈衝編碼調變（{{lang|en|PCM}}）在4位元下所得取样点；由于位元深度为4，每次取样的振幅便是16（2<sup>4</sup>）种可能值之一。]]
-
-在[[數位音訊]]與[[脈衝編碼調變]]（{{lang-en|PCM}}）中，'''音訊位元深度'''（{{Lang-en|audio bit depth}}）是指每次[[取樣]]儲存着多少[[位元]]（{{lang-en|bit}}）的資訊，数值直接对应着每次取樣的'''解析度'''。比如，[[數位音樂光碟]]采用[[16位元]]儲存取樣，则每个取樣點可以儲存65,536（2<sup>16</sup>）种可能振幅值之一；[[DVD-Audio|DVD-A]]與[[藍光光碟]]則最高可支援24位元，即每个取樣點最多可以儲存16,777,216（2<sup>24</sup>）种可能振幅值之一。
+在[[數位音訊]]與[[脈衝編碼調變]]（{{lang-en|PCM}}）中，'''音訊位元深度'''（{{Lang-en|audio bit depth}}）是指每次[[取樣]]儲存着多少[[位元]]（{{lang-en|bit}}）的資訊，数值直接对应着每次取樣的'''解析度'''。比如，[[數位音樂光碟]]采用[[16位元]]儲存取樣，则每个取樣點可以儲存65,536（2<sup>16</sup>）种可能振幅值之一；[[DVD-Audio|DVD-A]]與[[藍光光碟]]則最高可支援24位元，即每个取樣點最多可以儲存16,777,216（2<sup>24</sup>）种可能振幅值之一。<ref name="choosing_a_high_performance_audio_dac"/>
 
 在一些基本执行实例中，位元深度的變化主要影響由[[量化误差]]引起的[[量化雜訊]]水平，比如說[[訊噪比]]（{{lang-en|SNR}}）和[[動態範圍]]。不过，[[抖動_(數位訊號處理)|抖动]]、[[过采样]]、{{Tsl|en|noise shaping|雜訊整型|雜訊整型}}等技术也能够减轻上述影响，同时维持位元深度不变。另外，位元深度還會影響[[位元速率]]和檔案大小。
 
-位元深度仅对{{lang|en|PCM}}數位化訊號有意义，而[[有损数据压缩]]格式等非{{lang|en|PCM}}格式并无「位元深度」一说。
+位元深度仅对{{lang|en|PCM}}數位化訊號有意义，而[[有损数据压缩]]格式等非{{lang|en|PCM}}格式并无「位元深度」一说。<ref name="24_192_music_download"/><ref name="coding_high_quality_digital_audio"/>
 
+<!--#region 二進位表示-->
 == 二進位表示 ==
 
-{{lang|en|PCM}}訊號是一段數位音訊取樣點序列，它所包含的資料可為{{tsl|en|Signal reconstruction|訊號重建|重建}}原始[[類比訊號]]提供必要資訊。在序列中，所有取樣點在時間上間隔均勻，各自代表訊號在對應時間點上的[[振幅]]。振幅是每個取樣點所精确存儲的唯一資訊，其儲存形式通常是[[整数_(计算机科学)|整數]]或[[浮點數]]形式，但会编码成具有固定位數的[[二進位]]數。该二進位數之位数就是取樣的位元深度（{{lang-en|bit depth}}），也称作[[字長]]（{{lang-en|word length}}）或者字大小（{{lang-en|word size}}）。
+{{file2
+|zh=Pcm-zh-tw.svg
+|zh-hans=Pcm-zh-cn.svg
+|zh-hant=Pcm-zh-tw.svg
+|thumb|450px|4位元{{lang|en|PCM}}中，对類比訊號（红色）取樣量化、二進位編碼的示意图。
+}}
 
-取樣點的解析度是指：由原始類比訊號所含所有振幅值所构成的连续分布範圍內，有多少離散值能夠為取樣點所表示。取樣在整數PCM音訊資料中通常以[[二補數]]碼的形式存儲為帶[[符号性|符號數]]，以二進位整數表示的解析度會隨著字長增加而呈[[指數增長]]，字長每增加一位元，解析度即翻一倍。若位元深度以十進位整數形式表示为{{lang|en|n}}，則取樣點能夠表示的可能振幅值數量为[[2的幂|2<sup>n</sup>]]。<ref name="Understanding Audio" /> 例如，若位元深度为16，则解析度为65,536（2<sup>16</sup>）。
+{{lang|en|PCM}}訊號是一段數位音訊取樣值序列，它所包含的資料可為{{tsl|en|Signal reconstruction|訊號重建|重建}}原始[[類比訊號]]提供必要資訊。在序列中，所有取樣值在時間上間隔均勻，各自代表訊號在對應時間點上的[[振幅]]。振幅是每個取樣點所精确存儲的唯一資訊，其儲存形式通常是[[整数_(计算机科学)|整數]]或[[浮點數]]形式，但会编码成具有固定位數的[[二進位]]數。该二進位數之位数就是取樣的位元深度（{{lang-en|bit depth}}），也称作[[字長]]（{{lang-en|word length}}）或者字大小（{{lang-en|word size}}）。
 
-許多音訊[[檔案格式]]以及{{tsl|en|Digital audio workstation|數位聲訊工作站}}（{{lang-en|DAW}}）現在也支援以浮點數表示取樣的{{lang|en|PCM}}格式，<ref name="ptnativefloat" /><ref name="protools10float" /><ref name="reasonfloat" /><ref name="live10manual" />比如{{lang|en|[[WAV|WAV]]}}與{{lang|en|[[AIFF|AIFF]]}}。整數的位元模式是單一的比特系列，而浮點則與之不同，其數值表示是由單獨而互相構成數學關係的欄位構成的。最常見的浮點數標準是{{lang|en|[[IEEE 754|IEEE 754]]}}，在該標準中，數字由表示符號正負的{{tsl|en|Significand|符號位}}、指數以及由指數代表位移的{{tsl|en|Significand|有效數|尾數}}組成，其中尾數在{{lang|en|IEEE}}二進位格式中是以二進位分數表示的。
+取樣值的解析度是指：由原始類比訊號所含所有振幅值所构成的连续分布範圍內，有多少離散值能夠為取樣值所表示。在整數取樣PCM音訊中，取樣值通常以[[符号性|有符]][[二補數]]形式儲存，<ref name="pcm"/>以二進位整數表示的解析度會隨著字長增加而呈[[指數增長]]，字長每增加一位元，解析度即翻一倍。若位元深度以十進位整數形式表示为{{lang|en|n}}，則取樣值能夠表示的可能振幅值數量为[[2的幂|2<sup>n</sup>]]。<ref name="understanding_audio"/>例如，若位元深度为16，则解析度为65,536（2<sup>16</sup>）。
 
+許多音訊[[檔案格式]]以及{{tsl|en|Digital audio workstation|數位聲訊工作站}}（{{lang-en|DAW}}）現在也支援以浮點數表示取樣的{{lang|en|PCM}}格式，<ref name="pro_tools_10"/><ref name="avid_pro_tools_10"/><ref name="reason_mixing_masterclass"/><ref name="audio_fact_sheet"/>比如{{lang|en|[[WAV|WAV]]}}與{{lang|en|[[AIFF|AIF]]}}。<ref name="wave_file_specifications"/><ref name="aiff_aifc_sound_file_specifications"/>整數的位元模式是單一的比特系列，而浮點則與之不同，其數值表示是由單獨而互相構成數學關係的欄位構成的。最常見的浮點數標準是{{lang|en|[[IEEE 754|IEEE 754]]}}，在該標準中，數字由表示符號正負的{{tsl|en|Significand|符號位}}、指數以及由指數代表位移的{{tsl|en|Significand|有效數|尾數}}組成，其中尾數在{{lang|en|IEEE}}二進位格式中是以二進位分數表示的。<ref name="float_point"/>
+<!--#endregion 二進位表示-->
+
+<!--#region 量化-->
 == 量化 ==
 
-位元深度限制了重建訊號的[[訊噪比]]為[[量化_(信号处理)#量化误差|量化誤差]]所確定的最大[[信號位準|位準]]。而[[頻率響應]]則取決於[[取樣率]]而與位元深度無關。
+在重建出的訊號中，訊雜比最大值受限於取樣位元深度，並取決於[[量化_(信号处理)#量化误差|量化誤差]]值。[[頻率響應]]則受限於[[取樣率]]而與位元深度無關。
 
-類比至數位轉換（{{lang-en|ADC}}）中的量化誤差可建模為量化雜訊，其來源於ADC類比輸入電壓輸出為數位值時產生的捨入誤差，這種雜訊是非線性的並與訊號本身相關。
+由類比至數位轉換（{{lang-en|ADC}}）导致的量化誤差，是來自ADC的類比電壓輸入值与完成數位化的輸出值之間的捨入誤差，透過塑模可成為量化雜訊。這種雜訊非線性，並與訊號本身相關。
 
-[[File:Least significant bit.svg|thumb|280px|right|以[[8位元]]二進位表示的十進位數字149，其中{{lang|en|LSB}}以強調色標記]]
+[[File:Least significant bit.svg|thumb|280px|right|以[[8位元]]二進位表示的十進位數字149，其中最低有效位（{{lang|en|LSB}}）以強調色標記]]
 
-在理想狀態下，{{lang-en|ADC}}的量化誤差會均勻分布在±½倍的[[最低有效位]]（{{lang-en|LSB}}）內，並且訊號會有覆蓋所有量化階的均勻分布。信號量化雜訊比（{{lang-en|SQNR}}）可通過下式計算：
+在理想狀態下，類比至數位轉換的量化誤差會均勻分布在[[最低有效位]]（{{lang-en|LSB}}）±½倍范围內，並且訊號會有覆蓋所有量化階的均勻分布。信號量化雜訊比（{{lang-en|SQNR}}）可通過下式計算：
 
 <math>\mathrm{SQNR}=20\log_{10}(2^{Q})\approx6.02\cdot{}Q\ \mathrm{dB}</math>
 
-此處的{{lang|en|Q}}為訊號的量化位元數，解果以分貝（{{lang-en|dB}}）為單位。
+此處的{{lang|en|Q}}為訊號的量化位元數，解果以分貝（{{lang-en|dB}}）為單位。<ref name="taking_the_mystery_out_of_infamous_formula"/>
+
+{| class="wikitable"
+|+ 各种位元深度所对应的訊號雜訊比及解析度
+! 位元深度 !! 訊噪比 !! 整數取值总数（单个采样点） !! 有符十進位取值范围（单个采样点）
+|-
+! 4
+| 24.08&nbsp;dB || 16 || −8至+7
+|-
+! 8
+| 48.16&nbsp;dB || 256 || −128至+127
+|-
+! 11
+| 66.22&nbsp;dB || 2,048 || −1,024至+1,023
+|-
+! 12
+| 72.24&nbsp;dB || 4,096 || −2,048至+2,047
+|-
+! 16
+| 96.33&nbsp;dB || 65,536 || −32,768至+32,767
+|-
+! 18
+| 108.37&nbsp;dB || 262,144 || −131,072至+131,071
+|-
+! 20
+| 120.41&nbsp;dB || 1,048,576 || −524,288至+524,287
+|-
+! 24
+| 144.49&nbsp;dB || 16,777,216 || −8,388,608至+8,388,607
+|-
+! 32
+| 192.66&nbsp;dB || 4,294,967,296 || −2,147,483,648至+2,147,483,647
+|-
+! 48
+| 288.99&nbsp;dB || 281,474,976,710,656 || −140,737,488,355,328至+140,737,488,355,327
+|-
+! 64
+| 385.32&nbsp;dB || 18,446,744,073,709,551,616 || −9,223,372,036,854,775,808至+9,223,372,036,854,775,807
+|}
+<!--#endregion 量化-->
+
+<!--#region 浮點數-->
+== 浮點數 ==
+
+在浮點數取樣中，位元深度与解析度的关系并不像在整數取樣中那般简单。浮點數取值间隔并不均匀，相邻二值之间隔与取值本身成比例。這一特點令其訊噪比远远高于整數取樣体系，因为同一段訊號无论位準高低都具有相同精度。<ref name="fixed_versus_floating_point"/>
+
+尽管如此，浮點數取樣相比之下也有另一方面劣势：对于相同位元深度，在取值很大的情形下，相邻浮點數比相邻整数间隔更大。因此，浮點數取值越大，舍入误差便越大。而整数无论取值大小，舍入误差值始终维持在相同程度。换言之，整數无论大小，[[数值修约]]结果始终不外于[[最低有效位]]取0或1；而浮点数无论大小，訊噪比始终不变，量化雜訊位準始终与訊號位準成一定比例，随訊號位準升降而升降。<ref name="fixed_versus_floating_point"/>如果位元深度足够低，量化雜訊位準之不同便能够为人耳所辨别。<ref name="48_bit_interger_processing_beats"/>
+<!--#endregion 浮點數-->
+
+<!--#region 音訊處理-->
+== 音訊處理 ==
+
+正如類比至數位訊號轉換這一步會引入量化誤差，大多數处理數位音訊的運算涉及重新量化取樣，从而引入更多捨入誤差。在數位至類比轉換過程中，若要避免捨入誤差大於既有誤差，運算所涉計算步驟必須满足更高精确度要求。<ref name="word_relation"/>
+
+无论是[[定點數]]抑或浮點數運算，[[数字信号处理]]都能满足相应精度要求，但每一步運算的精度取决于所用硬體的運算精度，而不是輸入資料的解析度。例如[[x86]]处理器会采用[[单精度]]或[[双精度]]执行浮點運算，以及采用16、32及64位元解析度执行定點運算，因此无论来源格式为何，所有用到英特尔处理器的处理工序都必然受到上述精度限制。
+
+由定點數[[數位訊號處理器]]通常支援特定[[字長]]，从而支援特定的訊號解析度。例如[[摩托罗拉]]56000采用24位元[[乘法器]]以及56位元[[累加器]]，因而能够对两段取樣执行[[乘積累加運算]]并且免受[[算術溢出|溢位]]以及[[截尾函数|截断]]影响。<ref name="nxp_senicoductors_official_site"/>如果没有高规格累加器，定點運算的结果可能受到截断影响，从而精度较低。<ref name="the_scientist_and_enginners_guide"/>[[卷积]]这类用到重复处理的演算法以及[[无限冲激响应]]滤波器这类[[递归]]演算法对精度要求更高。<ref name="word_relation"/><ref name="determining_appropriart_precisions"/>尤其在[[无限冲激响应]]滤波器当中，舍入误差会导致[[频率响应]]表现欠佳、稳定性降低。<ref name="word_relation"/>
+<!--#endregion 音訊處理-->
+
+<!--#region 顫動訊號-->
+== 顫動訊號 ==
+
+在音訊處理流程当中，包括舍入误差及精度损失在内的量化误差会引入雜訊。若要减轻雜訊影响，可在量化前的訊號上加入[[抖動_(數位訊號處理)|顫動訊號]]（{{lang-en|dither}}），即加入少量随机雜訊。顫動能够消除非线性量化误差所致影响，导致-{失真}-程度极低，代价则是雜訊基底（{{lang-en|noise floor}}）会稍微放大。在ITU-R 468雜訊加權（{{lang-en|noise weighting}}）标准之下，16位元數位音訊的顫動訊號推荐值为以校準位準（{{lang-en|alignment level}}）减去约66分贝处，或是以數位满格（{{lang-en|full scale}}）位準减去84分贝处。该值与麦克风底噪、录音室噪声值相当，在16位元音訊当中不足为虑。
+
+对24位元音訊而言，數位轉換器内的雜訊位準永遠高於顫動訊號位準的必要值，因此无需使用顫動訊號。理论上，24位元音訊经编码可取得144分贝的动态范围，但根据各厂商产品型录，目前没有任何類比數位轉換器动态范围能够做到大于125分贝左右。
+
+顫動訊號也可以用于增大有效动态范围。对于16位元音訊，若利用人耳的[[频率响应]]特征，对顫動訊號执行雜訊整型再加诸于音訊，则其''主观''动态范围可达至少120分贝。
+<!--#endregion 顫動訊號-->
+
+<!--#region 动态范围及動態寬限-->
+== 动态范围及動態寬限 ==
+
+信号[[动态范围]]是指系统能够录入或再现的信号振幅值当中最大值与最小值之比。若无顫動訊號，则动态范围与量化雜訊基底相关，例如16位元整數体系取樣动态范围可达96 dB左右。數位音訊系统适当采用顫動訊號，可突破解析度对最低訊號位準的限制，增大有效动态范围。<ref name="dithering_in_adc"/>[[过采样]]及雜訊整型等手段可除去重要频段内量化误差，进一步增大动态范围。
+
+若一段訊號的最高位準未达到其位元深度对最高訊號位準的规定值，该段音訊便具备宽限（{{lang-en|headroom}}）。[[录音]]期间采用较高位元深度，可维持动态范围不变而同时留出宽限，在不增加量化误差的同时令低音量区域降幅（{{lang-en|clipping}}）风险降低。
+
+<!--#region 超取樣-->
+=== 超取樣 ===
+
+{{main|过采样}}
+若要在{{lang|en|PCM}}音訊当中维持位元深度不变而增大动态范围，超取樣也是一种方法。<ref name="oversanpling_interpolating_dacs"/>超取樣即以數倍于期望值的取樣率取得取樣值。假设量化误差均匀分布于各频段，超取樣以后其中一大部分将移位到[[超音波]]频段，播放音訊期间能够由[[數位類比轉換器]]滤除。
+
+若要藉由超取樣将位元深度提升<math>n</math>位元，则取樣率需要增加至
+<math>(2^n)^2 = 2^{2n}</math>倍。
+
+例如，一台14位元類比數位轉換器若要将位元深度提升2位元，产生16位元、48 kHz數位音訊，则需执行16（<math>= 2^{2\times (16-14)}</math>）倍超取樣，取樣率为768 kHz（<math>= 48\ \mathrm{kHz} \times 16</math>）。因此，超取樣在{{lang|en|PCM}}音訊当中以更高取樣率为代价，换得「以单一取樣值更低位元數维持解析度不变」这一优势。
+
+若要提高动态范围，但不在源訊號數位化期間执行超取樣，也可以在訊號重建阶段执行。比如在16倍超取樣当中，对于原始訊號每一取樣點，數位重建滤波器（{{Lang-en|reconstruction filter}}）都要计算得到16个新取樣點以取代，因此每次取樣结果都独一无二。如前文所述，有效位元深度增大的原理不在于减弱量化雜訊，而在于将雜訊频谱分散到音訊频宽的16倍。
+
+历史上，CD标准是由[[Sony]]与飞利浦共同开发制定。在各自首款CD播放机上，Sony CDP-101采用16位元DAC，而飞利浦CD100仅采用14位元双DAC。当时市场方面以至业界都有许多人士对此感到不解，原因是16位元PCM訊雜比可达96分贝，而14位元PCM仅能达到84分贝，较前者少12分贝。实际上，飞利浦是将4倍超取樣与一階雜訊整型（{{lang-en|first-order noise shaping}}）相结合，理论上能实现96分贝动态范围，与CD格式标准一致。<ref name="philips_research"/>在实际应用当中，飞利浦CD100在20 Hz至20 kHz频段上实测訊雜比为90分贝，表现与Sony CDP-101相同。<ref name="philips_cd100"/><ref name="sony_cdp_101"/>
+<!--#endregion 超取樣-->
+
+<!--#region 雜訊整型-->
+=== 雜訊整型 ===
+
+采用超取樣处理訊號，则量化雜訊大小在所有频段上都相同，动态范围增大倍数与超取樣率（{{lang-en|oversampling ratio}}）之平方根成正比。而雜訊整型是在较高频段加入额外雜訊以抵消较低频段一些雜訊，以令超取樣动态范围增幅更大的一种手段。''n''阶雜訊整型（{{lang-en|''n''th-order noise shaping}}，是指超取樣后能令动态范围较一般超取樣处理多6''n''分贝的雜訊整型。<ref name="b_1_first_and_second_order_noise_shaping_loops"/>譬如，对20 kHz類比音訊执行4倍超取樣，再结合二階雜訊整型，便能将动态范围提升30分贝。由此可知，对16位元訊號执行176 kHz取樣，位元深度等于对21位元訊號执行44.1 kHz无雜訊整型取樣。
+<!--#endregion 雜訊整型-->
+<!--#endregion 动态范围及動態寬限-->
 
 <!--#region reflist-->
 == 參考資料 ==
 
 {{Reflist|refs=
-<ref name="Understanding Audio">Thompson, Dan (2005). ''Understanding Audio''. Berklee Press. {{ISBN|978-0-634-00959-4}}.</ref>
-<ref name="ptnativefloat">{{cite book |url=https://books.google.com/books?id=0WEKAAAAQBAJ&pg=PA247 |title=Pro Tools 10 Advanced Music Production Techniques, pg. 247 |author=Campbell, Robert |year=2013 |publisher=Cengage Learning |isbn=978-1133728016 |access-date=12 August 2013}}</ref>
-<ref name="protools10float">{{cite web |url=http://www.soundonsound.com/sos/mar12/articles/pt-10.htm |title=Avid Pro Tools 10 |author=Wherry, Mark |date=March 2012 |publisher=Sound On Sound |access-date=10 August 2013}}</ref>
-<ref name="reasonfloat">{{cite web |url=http://www.soundonsound.com/sos/oct05/articles/reasontechnique.htm |title=Reason Mixing Masterclass |author=Price, Simon |date=October 2005 |publisher=Sound On Sound |access-date=10 August 2013}}</ref>
-<ref name="live10manual">{{cite web |url=https://www.ableton.com/en/manual/audio-fact-sheet/ |title=Ableton Reference Manual Version 10, 32. Audio Fact Sheet |publisher=Ableton |year=2019 |access-date=September 3, 2019}}</ref>
+<ref name="understanding_audio">{{Cite book|title=Understanding audio : getting the most out of your project or professional recording studio|url=https://www.worldcat.org/oclc/58450656|publisher=Berklee Press|date=2005|location=Boston, Mass.|isbn=0-634-00959-1|oclc=58450656|first=Daniel M.|last=Thompson}}</ref>
+<ref name="pcm">{{Cite web|title=Pulse Code Modulation (PCM)|url=https://ccrma.stanford.edu/~jos/mdft/Pulse_Code_Modulation_PCM.html|access-date=2021-12-29|work=ccrma.stanford.edu}}</ref>
+<ref name="pro_tools_10">{{Cite book|title=Pro Tools 10 : advanced music production techniques|url=https://www.worldcat.org/oclc/812179989|publisher=Course Technology PTR|date=2013|location=Boston, MA|isbn=978-1-133-72801-6|oclc=812179989|first=Robert|last=Campbell}}</ref>
+<ref name="avid_pro_tools_10">{{Cite web|title=Avid Pro Tools 10|url=https://www.soundonsound.com/reviews/avid-pro-tools-10|access-date=2021-12-29|work=www.soundonsound.com}}</ref>
+<ref name="reason_mixing_masterclass">{{Cite web|title=Reason Mixing Masterclass|url=https://www.soundonsound.com/techniques/reason-mixing-masterclass|access-date=2021-12-29|work=www.soundonsound.com}}</ref>
+<ref name="audio_fact_sheet">{{Cite web|title=Audio Fact Sheet — Ableton Reference Manual Version 11 {{!}} Ableton|url=https://www.ableton.com/en/manual/audio-fact-sheet/|access-date=2021-12-29|work=www.ableton.com|language=en}}</ref><!--6-->
+<ref name="wave_file_specifications">{{Cite web|title=Wave File Specifications|url=http://www-mmsp.ece.mcgill.ca/Documents/AudioFormats/WAVE/WAVE.html|access-date=2021-12-29|work=www-mmsp.ece.mcgill.ca}}</ref>
+<ref name="aiff_aifc_sound_file_specifications">{{Cite web|title=AIFF / AIFC Sound File Specifications|url=http://www-mmsp.ece.mcgill.ca/Documents/AudioFormats/AIFF/AIFF.html|access-date=2021-12-29|work=www-mmsp.ece.mcgill.ca}}</ref><!--8-->
+<ref name="float_point">{{Cite web|title=Floating Point (Real Numbers)|url=http://www.dspguide.com/ch4/3.htm|access-date=2021-12-29|work=www.dspguide.com}}</ref>
+<ref name="taking_the_mystery_out_of_infamous_formula">{{cite web |url=http://www.analog.com/static/imported-files/tutorials/MT-001.pdf |title=Taking the Mystery out of the Infamous Formula, "SNR = 6.02N + 1.76dB," and Why You Should Care |first=Walt |last=Kester |publisher=[[Analog Devices]]|year=2007|access-date=2021-12-29}}</ref>
+<!--TODO:-->
+<ref name="nwavguy_noise_dynamic_range">{{Cite web|title=NwAvGuy: Noise & Dynamic Range|url=http://nwavguy.blogspot.com/2011/09/noise-dynamic-range.html|access-date=2021-12-29|date=2011-09-06|last=Nwavguy|work=NwAvGuy}}</ref>
+<ref name="pcm4222">{{cite web |url=http://focus.ti.com/docs/prod/folders/print/pcm4222.html |title=PCM4222 |quote=Dynamic Range (–60dB input, A-weighted): 124dB typical Dynamic Range (–60dB input, 20&nbsp;kHz Bandwidth): 122dB typical |access-date=2021-12-29}}</ref>
+<ref name="wmb741_cirrus_logic">{{Cite web|title=WM8741 {{!}} Cirrus Logic|url=https://master-nq.webp2.cirrus.com/products/wm8741/|access-date=2021-12-29|work=master-nq.webp2.cirrus.com}}</ref><!--14-->
+<ref name="the_great_audio_myth">{{Cite web|title=The great audio myth: why you don’t need that 32-bit DAC|url=https://www.androidauthority.com/why-you-dont-want-that-32-bit-dac-667621/|access-date=2021-12-29|date=2016-01-19|work=Android Authority}}</ref>
+<ref name="32_bit_capable_dacs">{{Cite web|title=32-bit capable DACs|url=https://hydrogenaud.io/index.php/topic,95159.0.html|access-date=2021-12-29|work=hydrogenaud.io}}</ref><!--16-->
+<ref name="aspects_of_human_hearing">{{cite web |url=http://media.paisley.ac.uk/~campbell/AASP/Aspects%20of%20Human%20Hearing.PDF |title=Aspects of Human Hearing |author=D. R. Campbell |quote=The dynamic range of human hearing is [approximately] 120&nbsp;dB |access-date=2011-04-21 |url-status=dead |archive-url=https://web.archive.org/web/20110821051130/http://media.paisley.ac.uk/~campbell/AASP/Aspects%20of%20Human%20Hearing.PDF |archive-date=2011-08-21|df=dmy}}</ref>
+<ref name="sensitivity_of_human_ear">{{Cite web|title=Sensitivity of Human Ear|url=http://hyperphysics.phy-astr.gsu.edu/hbase/Sound/earsens.html|access-date=2021-12-29|work=hyperphysics.phy-astr.gsu.edu|archive-url=https://web.archive.org/web/20110604105752/http://hyperphysics.phy-astr.gsu.edu/hbase/sound/earsens.html |archive-date=2011-06-04|url-status=live}}</ref><!--18-->
+<ref name="multiple_adc">{{Citation|title=Multiple A to D converters for enhanced dynamic range|url=https://patents.google.com/patent/US6317065B1/en|date=2001-11-13|accessdate=2021-12-29|patent-number=US6317065B1|inventor-first=Gregory G.|inventor-last=Raleigh|inventor2-first=Vincent K.|inventor2-last=Jones}}</ref>
+<ref name="dynamic_range_extension">{{Cite journal|last1=Christodoulou|first1=Lakis|last2=Lane|first2=John|last3=Kasparis|first3=Takis|date=2010-03-01|title=Dynamic range extension using multiple A/D converters|journal=2010 4th International Symposium on Communications, Control and Signal Processing (ISCCSP)|pages=1–4|doi=10.1109/ISCCSP.2010.5463427|isbn=978-1-4244-6285-8|s2cid=16501096}}</ref><!--20-->
+<!--ENDTODO:-->
+<ref name="fixed_versus_floating_point">{{Cite web|title=Fixed versus Floating Point|url=http://www.dspguide.com/ch28/4.htm|access-date=2021-12-29|work=www.dspguide.com}}</ref>
+<ref name="48_bit_interger_processing_beats">{{cite web|url=http://www.jamminpower.com/PDF/48-bit%20Audio.pdf|title=48-Bit Integer Processing Beats 32-Bit Floating-Point for Professional Audio Applications|author=Moorer, James|date=1999-09|website=www.jamminpower.com|access-date=2013-08-12}}</ref>
+<ref name="word_relation">{{cite web |url=http://www.analog.com/en/content/relationship_data_word_size_dynamic_range/fca.html |title=Relationship of Data Word Size to Dynamic Range and Signal Quality in Digital Audio Processing Applications |author=Tomarakos, John |publisher=[[亚德诺半导体]]|website=www.analog.com |access-date=2021-12-29|language=en}}</ref><!--23-->
+<ref name="nxp_senicoductors_official_site">{{Cite web|title=NXP® Semiconductors Official Site {{!}} Home|url=https://www.nxp.com/|access-date=2021-12-29|work=www.nxp.com}}</ref>
+<ref name="the_scientist_and_enginners_guide">{{Cite web|title=The Scientist and Engineer's Guide to Digital Signal Processing, Chapter 4 – DSP Software / Number Precision|url=http://www.dspguide.com/ch4/4.htm|access-date=2021-12-29|work=www.dspguide.com}}</ref>
+<ref name="determining_appropriart_precisions">{{cite journal|last=Carletta|first=Joan|title=Determining Appropriate Precisions for Signals in Fixed-Point IIR Filters|journal=DAC|year=2003|citeseerx=10.1.1.92.1266</ref><!--26-->
+<ref name="choosing_a_high_performance_audio_dac">{{Cite web|title=Choosing a high-performance audio ADC|url=http://skywired.net/blog/2011/09/choosing-high-performance-audio-adc/|access-date=2021-12-29|date=2011-09-14|last=Trier|first=Author Stephen|work=Skywired.net|language=en-US}}</ref>
+<ref name="24_192_music_download">{{cite web |url=https://www.xiph.org/~xiphmont/demo/neil-young.html |title=24/192 Music Downloads ...and why they make no sense |last=Montgomery |first=Chris |author-link=Chris Montgomery |date=2012-03-25 |website=xiph.org |access-date=2013-05-26 |quote=With use of shaped dither, which moves quantization noise energy into frequencies where it's harder to hear, the effective dynamic range of 16 bit audio reaches 120dB in practice, more than fifteen times deeper than the 96dB claim. 120dB is greater than the difference between a mosquito somewhere in the same room and a jackhammer a foot away.... or the difference between a deserted 'soundproof' room and a sound loud enough to cause hearing damage in seconds. 16 bits is enough to store all we can hear, and will be enough forever. |archive-url=https://web.archive.org/web/20130707161555/http://xiph.org/~xiphmont/demo/neil-young.html |archive-date=July 2013-07-07 |url-status=dead|language=en}}</ref>
+<ref name="coding_high_quality_digital_audio">{{Cite web |url=https://www.meridian-audio.com/meridian-uploads/ara/coding2.pdf |title=Coding High Quality Digital Audio |last=Stuart |first=J. Robert |date=1997 |publisher=Meridian Audio Ltd |access-date=2016-02-25 |quote=One of the great discoveries in PCM was that, by adding a small random noise (that we call dither) the truncation effect can disappear. Even more important was the realisation that there is a ''right'' sort of random noise to add, and that when the right dither is used, the resolution of the digital system becomes ''infinite''. |archive-url=https://web.archive.org/web/20160407163817/https://www.meridian-audio.com/meridian-uploads/ara/coding2.pdf |archive-date=2016-04-07 |url-status=dead |df=dmy-all |language=en}}</ref><!--29-->
+<ref name="dithering_in_adc">{{cite web |url=http://www.e2v.com/assets/media/files/documents/broadband-data-converters/doc0869B.pdf |title=Dithering in Analog-to-Digital Conversion |publisher=e2v Semiconductors |year=2007 |access-date=2011-07-26 |archive-url=https://web.archive.org/web/20111004205321/http://www.e2v.com/assets/media/files/documents/broadband-data-converters/doc0869B.pdf |archive-date=2011-10-04 |url-status=dead }}</ref>
+<ref name="oversanpling_interpolating_dacs">{{cite web |last=Kester |first=Walt |title=Oversampling Interpolating DACs |url=http://www.analog.com/static/imported-files/tutorials/MT-017.pdf |publisher=Analog Devices |access-date=2013-08-19|url-status=dead}}</ref>
+<ref name="philips_research">{{Cite web|title=Philips Research|url=https://www.philips.com/a-w/about/innovation/research.html|access-date=2021-12-29|work=Philips|language=en}}</ref>
+<ref name="philips_cd100">{{Cite web|title=Philips CD100 Stereo Compact Disc Player Manual {{!}} HiFi Engine|url=https://www.hifiengine.com/manual_library/philips/cd100.shtml|access-date=2021-12-29|work=www.hifiengine.com}}</ref>
+<ref name="sony_cdp_101">{{Cite web|title=Sony CDP-101 Stereo Compact Disc Player Manual {{!}} HiFi Engine|url=https://www.hifiengine.com/manual_library/sony/cdp-101.shtml|access-date=2021-12-29|work=www.hifiengine.com}}</ref>
+<ref name="b_1_first_and_second_order_noise_shaping_loops">{{Cite web|title=B.1 First and Second-Order Noise Shaping Loops|url=https://www.iue.tuwien.ac.at/phd/schrom/node115.html|access-date=2021-12-29|work=www.iue.tuwien.ac.at}}</ref>
 }}
 <!--#endregion reflist-->
 
