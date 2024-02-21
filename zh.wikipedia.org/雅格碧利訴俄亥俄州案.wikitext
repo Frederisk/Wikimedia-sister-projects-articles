@@ -32,9 +32,9 @@
 == 最高法院 ==
 雖然俄亥俄各法院均做出了有罪判決，但美國最高法院卻以認定影片並非淫穢影片所以應當受憲法保護為由推翻了原來的審判結果。不過，法院並沒有在判決基本理由上達成一致，在諸多意見中有四種非常有代表性的不同看法。包括兩位持有不同意見的人在內，沒有任何一個觀點的得到兩位以上法官的肯定。[[小威廉·布倫南]]對此案作出了宣判，但只有{{tsl|en|Arthur Goldberg|亞瑟·戈德堡}}法官同意他的觀點。
 
-[[休戈·布萊克]]法官聯名[[威廉·道格拉斯]]法官再次強調了[[第一修正案]]中對任何形式審查的禁令。<ref>{{cite court|litigants=State v. Jacobellis|vol=179|reporter=N.E.2d|opinion=777|pinpoint=|court=Ohio|date=1962|url=https://scholar.google.com/scholar_case?case=14636328038336358072|accessdate=2017-01-05|quote=}}</ref>持反對意見的[[厄爾·華倫]]對法院淫穢判例的混亂表示不滿，並認為俄亥俄州所做出的裁定與最高法院在{{tsl|en|Roth v. United States|羅斯訴美聯邦案|羅斯訴美聯邦案}}中的判決保持一致並且維護了國家利益，<ref>''Jacobellis'', 378 U.S. at 199 (Warren, C.J., dissenting).</ref>[[約翰·馬歇爾·哈倫|約翰·馬歇爾·哈倫]]同樣持反對立場，他認為美國各州應當擁有「自由但並非不受聯邦政府限制{{lang|en|wide, but not federally unrestricted}}」的權力來決定是否禁止淫穢電影。<ref>''Jacobellis'', 378 U.S. at 203 (Harlan, J., dissenting).</ref>
+[[休戈·布萊克]]法官聯名[[威廉·道格拉斯]]法官再次強調了[[第一修正案]]中對任何形式審查的禁令。<ref>{{cite court|litigants=State v. Jacobellis|vol=179|reporter=N.E.2d|opinion=777|pinpoint=|court=Ohio|date=1962|url=https://scholar.google.com/scholar_case?case=14636328038336358072|accessdate=2017-01-05|quote=}}</ref>持反對意見的[[厄爾·華倫]]對法院淫穢判例的混亂表示不滿，並認為俄亥俄州所做出的裁定與最高法院在{{tsl|en|Roth v. United States|羅斯訴美聯邦案|羅斯訴美聯邦案}}中的判決保持一致並且維護了國家利益，<ref>''Jacobellis'', 378 U.S. at 199 (Warren, C.J., dissenting).</ref>[[約翰·馬歇爾·哈倫|約翰·馬歇爾·哈倫]]同樣持反對立場，他認為美國各州應當擁有「自由但並非不受聯邦政府限制（{{lang-en|wide, but not federally unrestricted}}）」的權力來決定是否禁止淫穢電影。<ref>''Jacobellis'', 378 U.S. at 203 (Harlan, J., dissenting).</ref>
 
-雅格碧利一案中最出名的觀點是[[波特·斯圖爾特]]的支持觀點：憲法保護除了「[[硬調色情|硬調色情製品]]{{lang|en|hard-core pornography}}」以淫穢內容。他寫道：「我當前應當不會去再進一步嘗試去定義那些被包含在速記說明（[[硬調色情|硬調色情]]）中的材料類別——或許我永遠都沒法成功地做到這點——但是{{tsl|en|I know it when I see it|一望而知|當我一看到它我就知道了}}，這個案件中的電影顯然不是（那種色情製品）。」<ref>''Jacobellis'', 378 U.S. at 197 (Stewart, J., concurring).</ref>
+雅格碧利一案中最出名的觀點是[[波特·斯圖爾特]]的支持觀點：憲法保護除了「[[硬調色情|硬調色情製品]]」以外淫穢內容。他寫道：「我當前應當不會去再進一步嘗試去定義那些被包含在速記說明（[[硬調色情|硬調色情]]）中的材料類別——或許我永遠都沒法成功地做到這點——但是{{tsl|en|I know it when I see it|一望而知|當我一看到它我就知道了}}，這個案件中的電影顯然不是（那種色情製品）。」<ref>''Jacobellis'', 378 U.S. at 197 (Stewart, J., concurring).</ref>
 
 == 後續發展 ==
 直到1973年{{tsl|en|Miller v. California|米勒訴加州案|米勒訴加州案}}之前，法院對淫穢內容的判決依然相對零碎不一。<ref>{{ussc|name=Miller v. California|413|15|1973}}.</ref>
