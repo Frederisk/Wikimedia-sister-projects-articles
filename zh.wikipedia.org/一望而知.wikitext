@@ -1,3 +1,44 @@
-熟語「一望而知」或者說「當我一看到我就知道了」（{{lang-en|I know it when I see it}}）是指在事物缺乏明確的定義及屬性時，仍人試圖在這種情形下對其分類的一種方式。
+<%-- [PAGE_INFO]
+    comment = #Please do not remove this struct. It's record contains some important information of edit. This struct will be removed automatically after you push edits.#
+    pageTitle = #一望而知#
+    pageID = #8783295#
+    revisionID = #83182582#
+    contentModel = #wikitext#
+    contentFormat = #text/x-wiki#
+[END_PAGE_INFO] --%>
+
+熟語'''「一望而知」'''或者說'''「當我一看到我就知道了」'''（{{lang-en|'''I know it when I see it'''}}）表達的是在事物缺乏明確的定義及屬性時，仍人試圖在這種情形下對其分類的一種方式。
 
 這種表述至少自19世紀起就已經算常見了。與此類似的短語有出現在[[亞瑟·柯南·道爾]]所著的小說《[[巴斯克維爾的獵犬]]》之中。在故事中，故事角色[[歇洛克·福爾摩斯]]在評價畫作時說：「我一看我就知道（這些畫作）好在哪兒，並且現在就看出來了」。
+
+1964年，在[[雅格碧利訴俄亥俄州案]]中，美國最高法院法官[[波特·斯圖爾特]]中應用了該短語以描述他對色情作品的判定標準。<ref name="origins_wsj"/><ref name="social_media_ecommercetimes"/>在解釋為何本案所涉及的內容在{{tsl|en|Roth test|羅斯測試}}中不屬於[[淫穢]]內容而屬於不受審查的受保護言論時，斯圖爾特寫道：
+
+{{quote|我當前應當不會去再進一步嘗試去定義那些被包含在速記說明（[[硬調色情|硬調色情]]）中的材料類別——或許我永遠都沒法成功地做到這點——但是當我一看到它我就知道了，這個案件中的電影顯然不是（那種色情製品）。<ref name="quote_supreme"/>}}
+
+這句話也成為了美國最高法院歷史上最有名的短語之一。<ref name="on_jstor"/>不過要注意的是，雖然「當我一看到它我就知道了」或者「一望而知」這句話以對「淫穢」內容的測試標準而廣受引用，但是在他簡短的評論中並沒有使用「淫穢」一詞，而是在表示他一看到時就知道事物是否符合「硬調色情」。<ref name="quote_supreme"/>
+
+斯圖爾特的「一望而知」標準因其「現實而勇敢」<ref name="worthy_book"/>並且坦率直白而受到讚譽。<ref name="literature_book"/>但另一方面，由於其所含的個人主義的主觀任意性，該標準也被批評為可能存在謬誤。<ref name="bias_speech"/><ref name="approaches_bu"/>
+
+== 歷史 ==
+
+{{empty section}}
+
+== 參見 ==
+
+* [[鴨子測試]]：一種以事物的可辨別特徵來分類的方法。
+* [[溯因推理]]：事實推理到最佳解釋的過程。
+
+== 參考資料 ==
+
+{{reflist|refs=
+<ref name="origins_wsj">{{Cite web|title=The Origins of Justice Stewart's "I Know It When I See It"|url=https://www.wsj.com/articles/BL-LB-4558|website=The Wall Street Journal Online|date=2007-09-27|language=en|last=Lattman|first=Peter|access-date=2024-06-26}}</ref>
+<ref name="social_media_ecommercetimes">{{Cite web|title=SCOTUS: From Pornography's 'I Know It When I See It' to Social Media's 'I Don't Get It'|url=https://www.ecommercetimes.com/story/scotus-from-pornographys-i-know-it-when-i-see-it-to-social-medias-i-dont-get-it-71402.html|website=E-Commerce Times|date=2010-12-08|language=en-US|last=admin-ectnews|access-date=2024-06-26}}</ref>
+<ref name="quote_supreme">{{Cite web|title=Jacobellis v. Ohio, 378 U.S. 184 (1964)|url=https://supreme.justia.com/cases/federal/us/378/184/|website=Justia Law|language=en|access-date=2024-06-26}}</ref>
+<ref name="on_jstor">{{Cite journal |last=Gewirtz |first=Paul |title=On "I Know It When I See It" |url=https://www.jstor.org/stable/797245?origin=crossref |journal=The Yale Law Journal |date=1996-01 |volume=105 |issue=4 |doi=10.2307/797245}}</ref>
+<ref name="worthy_book">{{Cite book|title=A Worthy Tradition: Freedom of Speech in America|last=Harry Kalven|year=1988|pages=40}}</ref>
+<ref name="literature_book">{{Cite book|title=Law and Literature: A Misunderstood Relation|authorlink=Richard A. Posner|year=1988|pages=308}}</ref>
+<ref name="bias_speech">{{cite speech |last=Baskin|first=Barry|title=Implicit Bias in the Courtroom|event=2018 Afternoon Plenary Speakers|date=2018-11-16|location=Contra Costa County, California|publisher=Contra Costa County Bar Association|url=http://www.cccba.org/attorney/mcle/seminar-materials/2018/Plenary_Session.pdf |access-date=2018-11-29|language=en}}</ref><!--404-->
+<ref name='approaches_bu'>{{cite journal|last=Goldberg|first=William|year=2010|title=Two Nations, One Web: Comparative Legal Approaches To Pornographic Obscenity By The United States And The United Kingdom|journal=Boston University Law Review |volume=90|url=http://www.bu.edu/law/journals-archive/bulr/documents/goldberg_000.pdf |pages=2121–2148 |access-date=2024-06-26}}</ref>
+}}
+
+[[Category:認識論概念]][[Category:美国最高法院]][[Category:美國法律術語]][[Category:法律术语]]
